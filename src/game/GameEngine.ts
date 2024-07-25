@@ -51,20 +51,14 @@ export class GameEngine {
 
   private animate() {
     requestAnimationFrame(this.animate.bind(this));
-
     const delta = this.clock.getDelta();
-
     this.update(delta);
-
-    this.controls.update();
-
     this.renderer.render(this.scene, this.camera);
   }
-
+  
   private update(dt: number) {
-    if (this.cube) {
-      this.cube.rotation.y += dt * 0.5;
-    }
+    if (this.cube) this.cube.rotation.y += dt * 0.5;
+    this.controls.update();
   }
 
 }
