@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow: hidden;
+}
+
+body {
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    border: none;
+    font-family: 'Segoe UI', sans-serif;
+    background: #111;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+.rotate-image-container {
+    display: none;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#rotate__image {
+    width: 60%;
+    max-width: 200px;
+}
+
+canvas {
+    user-select: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+#app {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
